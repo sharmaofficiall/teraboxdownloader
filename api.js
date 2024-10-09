@@ -3,8 +3,7 @@ const axios = require("axios");
 async function getDetails(id) {
     try {
         const response = await axios.get(
-            `https://apis.forn.fun/tera/data.php?id=${id}`
-            // https://tera.instavideosave.com/?url=
+            `https://tera.instavideosave.com/?url=${id}`
         );
         return response.data;
     } catch (error) {
